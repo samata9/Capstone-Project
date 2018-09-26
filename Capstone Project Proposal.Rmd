@@ -1,0 +1,34 @@
+---
+title: "Capstone Project Proposal"
+author: "Samata"
+date: "September 25, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This document contains my proposal for a Capstone Project that I will be completing. I have decided to use the data that IBM has created of employee attrition which includes information including their salary, gender, travel, job satisfaction, year of service etc.  
+I will be using data to answer some of the common questions including but not limited to  
+  1) Common character of those lost in  attrition?  
+  2) Is there a relation between monthly income and attrition?  
+  3) What's the common characteristics among those with no attrition?  
+  
+The purpose of the project is to answer the above questions such that the client knows  true reason behind employee attrition and the necessary steps it needs to take.  
+
+Data received has about 35 columns. Below it shows all the column that the data provide.   I don't believe that all the columns are equally vital for the analysis.  I will be using the information that I think are necessary for the client to make a decision.
+
+```{r}
+#Create Directory
+setwd("C:/Users/pankaj/Desktop/Samata/Springboard/Project/")
+#Import File
+Employee_Attrition <- read.csv(file.choose(), header=TRUE)
+attach(Employee_Attrition)
+
+head(Employee_Attrition, n=0)
+```
+
+
