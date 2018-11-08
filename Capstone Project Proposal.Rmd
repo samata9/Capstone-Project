@@ -23,7 +23,7 @@ Data received has about 35 columns. Below it shows all the column that the data 
 
 ```{r}
 #Create Directory
-setwd("C:/Users/pankaj/Desktop/Samata/Springboard/Project/")
+setwd("C:/Users/Springboard/Project/")
 #Import File
 Employee_Attrition <- read.csv(file.choose(), header=TRUE)
 attach(Employee_Attrition)
